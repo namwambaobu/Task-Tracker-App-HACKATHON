@@ -113,6 +113,8 @@ class _TasksScreenState extends State<TasksScreen> {
         id: newTaskId,
         todoText: taskText,
         isDone: false,
+        dueDate: DateTime.now(), // Set dueDate to the current date and time
+        category: '', // Set category to an empty string
       );
 
       // Add the new task to the todosList

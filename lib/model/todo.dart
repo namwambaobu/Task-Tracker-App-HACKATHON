@@ -38,7 +38,41 @@ class ToDo {
           dueDate: DateTime.now().add(Duration(days: 2)),
           priority: Priority.medium,
           category: 'Personal'),
-      // Add more ToDo items here...
+      ToDo(
+          id: '3',
+          todoText: 'Call my Mother',
+          isDone: true,
+          dueDate: DateTime.now().add(Duration(days: 1)),
+          priority: Priority.medium,
+          category: 'Personal'),
+      ToDo(
+          id: '4',
+          todoText: 'Go for A dentist Checkup',
+          isDone: true,
+          dueDate: DateTime.now().add(Duration(days: 2)),
+          priority: Priority.medium,
+          category: 'Personal'),
+      ToDo(
+          id: '5',
+          todoText: 'Study For upcoming SATs',
+          isDone: true,
+          dueDate: DateTime.now().add(Duration(days: 2)),
+          priority: Priority.medium,
+          category: 'Personal'),
+      ToDo(
+          id: '6',
+          todoText: 'Go for Drone school Training',
+          isDone: true,
+          dueDate: DateTime.now().add(Duration(days: 5)),
+          priority: Priority.medium,
+          category: 'Personal'),
+      ToDo(
+          id: '7',
+          todoText: 'Learn Video Editing',
+          isDone: true,
+          dueDate: DateTime.now().add(Duration(days: 21)),
+          priority: Priority.medium,
+          category: 'Personal'),
     ];
   }
 }
