@@ -250,37 +250,3 @@ class _TasksScreenState extends State<TasksScreen> {
     );
   }
 }
-
-enum Priority { low, medium, high }
-
-class ToDo {
-  final String id;
-  final String todoText;
-  bool isDone;
-  final Priority priority;
-
-  ToDo(
-      {required this.id,
-      required this.todoText,
-      this.isDone = false,
-      this.priority = Priority.low});
-
-  static List<ToDo> todoList() {}
-
-  // Rest of your code...
-}
-
-class ToDo {
-  final String id;
-  final String todoText;
-  bool isDone;
-  final DateTime dueDate;
-
-  ToDo(
-      {required this.id,
-      required this.todoText,
-      this.isDone = false,
-      required this.dueDate});
-
-  // Rest of your code...
-}
