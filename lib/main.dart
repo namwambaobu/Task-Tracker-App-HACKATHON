@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Task Tracker', // Set app title
       theme: ThemeData(
         // Configure app theme
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-            primary: Color.fromARGB(123, 25, 208, 221)), // Set primary color
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(primary: const Color(0xFF883007)), // Set primary color
         useMaterial3: true, // Enable Material 3 design elements
       ),
       home: TasksScreen(), // Set home screen to be  TasksScreen

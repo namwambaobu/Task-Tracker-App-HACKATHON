@@ -162,8 +162,8 @@ class _TasksScreenState extends State<TasksScreen> {
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage("assets/profile.jpeg"),
               ),
-              accountName: Text("Student"),
-              accountEmail: Text("student@gmail.com"),
+              accountName: Text("John Doe"),
+              accountEmail: Text("johndoe@gmail.com"),
             ),
             // Drawer menu items for different task categories
             ListTile(
@@ -249,4 +249,38 @@ class _TasksScreenState extends State<TasksScreen> {
       backgroundColor: const Color(0xFFCECAB7),
     );
   }
+}
+
+enum Priority { low, medium, high }
+
+class ToDo {
+  final String id;
+  final String todoText;
+  bool isDone;
+  final Priority priority;
+
+  ToDo(
+      {required this.id,
+      required this.todoText,
+      this.isDone = false,
+      this.priority = Priority.low});
+
+  static List<ToDo> todoList() {}
+
+  // Rest of your code...
+}
+
+class ToDo {
+  final String id;
+  final String todoText;
+  bool isDone;
+  final DateTime dueDate;
+
+  ToDo(
+      {required this.id,
+      required this.todoText,
+      this.isDone = false,
+      required this.dueDate});
+
+  // Rest of your code...
 }
